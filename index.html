@@ -27,9 +27,7 @@
   .nav{position:fixed;z-index:80;top:20px;left:0;right:0;transition:transform .35s ease}
   .nav__inner{width:min(1360px,calc(100% - 96px));margin:auto;min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:24px;position:relative;border-radius:999px;padding:0 16px 0 9px;transition:background .45s,border-color .45s,box-shadow .45s,backdrop-filter .45s;border:1px solid transparent}
   .nav.is-scrolled .nav__inner,.nav.is-open .nav__inner{background:rgba(8,23,37,.69);border-color:rgba(255,255,255,.14);backdrop-filter:blur(24px) saturate(1.2);-webkit-backdrop-filter:blur(24px) saturate(1.2);box-shadow:0 18px 52px #0002}
-  .brand{display:inline-flex;align-items:center;gap:12px;color:white;white-space:nowrap;letter-spacing:-.025em;font-weight:700;font-size:15px}
-  .brand__mark{width:43px;height:43px;display:grid;place-items:center;border-radius:50%;border:1px solid #ffffff6a;background:linear-gradient(145deg,#ffffff20,#ffffff05);color:white;font-size:13px;font-weight:800;letter-spacing:-.07em;box-shadow:inset 0 1px 0 #ffffff40}
-  .brand__dot{font-size:10px;color:#aec8d7;margin-left:2px}
+  .brand{display:inline-flex;align-items:center;min-height:44px;color:white;white-space:nowrap;letter-spacing:-.025em;line-height:1.2;font-weight:700;font-size:20px}
   .nav__links{display:flex;align-items:center;gap:38px;margin-left:auto;margin-right:22px;color:#e7edf3e8}
   .nav__links a{font-weight:600;font-size:12px;opacity:.78;transition:opacity .2s}
   .nav__links a:hover{opacity:1}
@@ -169,8 +167,7 @@
     .wrap{width:calc(100% - 44px)}
     .nav{top:14px}
     .nav__inner{width:calc(100% - 28px);min-height:49px;padding:0 5px 0 2px}
-    .brand{gap:8px;font-size:13px}
-    .brand__mark{width:39px;height:39px;font-size:12px}
+    .brand{font-size:18px}
     .nav__links,.nav__cta{display:none}
     .nav__menu{display:flex}
     .mobile-drawer{display:flex;position:absolute;top:61px;left:0;right:0;flex-direction:column;gap:1px;padding:10px;background:rgba(9,25,40,.95);border:1px solid #ffffff23;backdrop-filter:blur(20px);border-radius:20px;box-shadow:0 20px 50px #0004;opacity:0;pointer-events:none;transform:translateY(-10px);transition:opacity .2s,transform .2s}
@@ -238,7 +235,7 @@
 <body>
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="brand" href="#home" aria-label="Inzimam Ali — home"><span class="brand__mark">IA.</span><span>Inzimam Ali<span class="brand__dot">✦</span></span></a>
+      <a class="brand" href="#home" aria-label="Inzimam Ali — home"><span>Inzimam Ali</span></a>
       <nav class="nav__links" aria-label="Primary navigation"><a href="#services">Projects</a><a href="#experience">Experience</a><a href="#contact">Connect</a></nav>
       <button class="nav__cta" data-modal="contactModal">Let's talk <span>↗</span></button>
       <button class="nav__menu" id="mobileMenu" aria-label="Toggle navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 8h14M5 16h14"/></svg></button>
